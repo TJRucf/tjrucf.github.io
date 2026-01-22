@@ -1,0 +1,112 @@
+<!-- AI used only once, to help with figuring out the 'required' attribute's usage inside a dropdown list,
+ as I'd previously placed a placeholder tag that disabled it.
+ The exact line where it was used (never copied + pasted) is indicated below.
+ Otherwise, only slides, W3Schools, and documentation was used. -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    table, th, td, tr{
+      border: 1px solid black;
+    }
+  </style>
+  <title>Pizza Ordering Form</title>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html">← Back to Home</a>
+</nav>
+
+<!-- Pizza order form -->
+<form method ="get" class = "pizza-order">
+  <div class = pizza-order>
+    <h1>Pizza Ordering Form</h1>
+    <div class = "ContactInformation">
+      <h2>Contact Information</h2>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" placeholder="e.g. John Smith" required> <br>
+      <label for="tel">Phone: </label>
+      <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx" required> <br>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="e.g. johnsmith@gmail.com" required> <br>
+    </div>
+    <div class = PizzaSize>
+      <h2>Select Pizza Size</h2>
+      <select name="PizzaSize" id="PizzaSize" required>
+        <!-- AI used only to get guidance to fix the required attribute's usage for only the line below.-->
+        <option value= "">--Select Size--</option>
+        <option value="XLarge">XLarge</option>
+        <option value="Large">Large</option>
+        <option value="Medium">Medium</option>
+      </select>
+    </div>
+    <div class = Sauce>
+      <h2>Select Sauce</h2>
+      <input required type="radio" name="sauce"><label>Marinara</label> <br>
+      <input required type="radio" name="sauce"><label>Alfredo</label> <br>
+      <input required type="radio" name="sauce"><label>No Sauce</label> <br>
+    </div>
+    <div class = Toppings>
+      <h2>Select Toppings</h2>
+      <input type="checkbox" name="Pepperoni"><label>Pepperoni</label>
+      <input type="checkbox" name="Mushroom"><label>Mushroom</label>
+      <input type="checkbox" name="Sausage"><label>Sausage</label>
+      <input type="checkbox" name="Onion"><label>Onion</label>
+      <input type="checkbox" name="Pepper"><label>Pepper</label>
+      <input type="checkbox" name="Ham"><label>Ham</label>
+    </div>
+    <div class = Instructions>
+      <h2>Additional Instructions</h2>
+      <textarea name = "Instructions" placeholder = "Add instructions"></textarea>
+    </div>
+    <div class = Submit>
+      <input type="Submit" value="Submit">
+    </div>
+  </div>
+</form>
+<br>
+<br>
+
+<!-- Video game table -->
+<div class = games-table>
+  <p>List of My Favorite Games</p>
+  <table>
+    <tr>
+      <th><strong>Developer</strong></th>
+      <th><strong>Title</strong></th>
+      <th><strong>Year</strong></th>
+    </tr>
+
+    <tr>
+      <td rowspan = "2">Rockstar</td>
+      <td>Red Dead Redemption 2</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>L.A. Noir</td>
+      <td>2011</td>
+    </tr>
+
+    <tr>
+      <td>Paradox</td>
+      <td>Crusader Kings III</td>
+      <td>2020</td>
+    </tr>
+
+    <tr>
+      <td>IOI</td>
+      <td>HITMAN: WOA</td>
+      <td>2022</td>
+    </tr>
+    <tr>
+      <td colspan = "3">Count:4</td>
+    </tr>
+
+  </table>
+</div>
+
+</body>
+</html>
