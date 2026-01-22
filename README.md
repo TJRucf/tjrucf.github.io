@@ -1,1 +1,0 @@
-# tjrucf.github.io
