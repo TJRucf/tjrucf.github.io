@@ -1,0 +1,60 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    font-family: "Arial", serif;
+    text-align:center;
+}
+
+h2{
+    font-family: "Arial", serif;
+    text-align:left;
+}
+
+#paragraph2{
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: .2em;
+    background-color: white;
+    padding: 2em;
+    width: 60vw;
+}
+
+.blue{
+    background-color: darkslateblue;
+    border-style: solid;
+    border-color: black;
+    border-width: .1em;
+    color: white;
+    padding: 20px;
+}
+
+li{
+    list-style-type: decimal-leading-zero;
+}
+
+table{
+
+}
+
+table, th, td {
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: .01em;
+    padding: 10px;
+}
+
+th{
+    background-color: lightgray;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+td, tr{
+    background-color: white;
+}
+
+a:visited{
+    color:darkred;
+}
