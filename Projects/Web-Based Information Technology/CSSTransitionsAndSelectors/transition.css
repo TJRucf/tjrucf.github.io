@@ -1,0 +1,23 @@
+#container h2 + p::first-letter {
+    font-family: Times New Roman, serif;
+    font-size: 36px;
+}
+
+#container h2 + p + p::after {
+    content: url("arrow.png");
+}
+
+#container~{}
+
+.container article{
+    color: blue;
+}
+
+
+/*#container ~ h2, p{*/
+/*    color: gray;*/
+/*}*/
+
+/*#container ~ article{*/
+/*    color:black*/
+/*}*/
