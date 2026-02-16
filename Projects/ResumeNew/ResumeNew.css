@@ -1,0 +1,241 @@
+/*
+AI used only to provide basic examples of grid layouts, rest was from docs
+ */
+
+body{
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Bookman Old Style", "Times New Roman", serif;
+    font-weight: normal;
+    color: darkslategray;
+    text-align: center;
+    border-bottom: 2px solid darkslategray;
+    padding: .5em;
+    margin-bottom: 0;
+    background-color: white;
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-left: black solid 1px;
+}
+
+h2{
+    font-family: "Bookman Old Style", "Times New Roman", serif;
+    font-weight: normal;
+    color: darkslategray;
+    text-align: center;
+}
+
+.Container{
+    display: grid;
+    background-color: white;
+    border: black solid 1px;
+    padding: 1em;
+}
+
+.contactDetails{
+    padding: 0;
+    line-height: 0.25em;
+}
+
+.Awards h2{
+    padding-top: 1em;
+}
+
+.Certifications h2{
+    padding-top: 1em;
+}
+
+.exp1, .exp2{
+    margin-bottom: 20px;
+}
+
+.exp1 sub, .exp2 sub{
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.exp1 p, .exp2 p{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.exp1 ul, .exp2 ul{
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1080px){
+    body{
+        max-width: 70vw;
+    }
+    
+    .Container{
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+    
+    .LeftCol{
+        grid-column: 1;
+        border-right: 2px solid darkslategray;
+        padding-right: 20px;
+    }
+    
+    .RightCol{
+        grid-column: 2;
+        padding-left: 20px;
+    }
+    
+    .education{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5em;
+        margin-bottom: 15px;
+    }
+    
+    .leftTop, .leftBot{
+        grid-column: 1;
+    }
+    
+    .leftTop p, .leftBot p{
+        margin: 2px 0;
+    }
+    
+    .leftTop p:first-child, .leftBot p:first-child{
+        font-weight: bold;
+    }
+    
+    .rightTop, .rightBot{
+        grid-column: 2;
+        text-align: right;
+        padding-left: 0.5em;
+    }
+    
+    .Award{
+        display: grid;
+        grid-template-columns:1fr auto;
+        gap: 1em;
+        margin-bottom: 10px;
+        padding-bottom: 1em;
+    }
+    
+    .awardName{
+        grid-column: 1;
+        margin: 0;
+    }
+    
+    .awardDate{
+        grid-column: 2;
+        text-align: left;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .Certifications li{
+        line-height: 5vh;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 412px){
+    body{
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .Container{
+        grid-template-columns:1fr;
+        gap: 0;
+        padding: 0.75em;
+    }
+    
+    .LeftCol{
+        grid-column: 1;
+        grid-row: 1;
+        border-right: none;
+        border-bottom: 2px solid darkslategray;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .RightCol{
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 0;
+    }
+    
+    .education{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-bottom: 15px;
+    }
+    
+    .leftTop, .leftBot{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .leftTop p, .leftBot p{
+        margin: 2px 0;
+    }
+    
+    .leftTop p:first-child, .leftBot p:first-child{
+        font-weight: bold;
+    }
+    
+    .rightTop, .rightBot{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        padding-left: 0;
+        margin-top: 5px;
+    }
+    
+    .Award{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+        padding-bottom: 1em;
+    }
+    
+    .awardName{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+    }
+    
+    .awardDate{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .Certifications li{
+        line-height: 1.8em;
+        font-size: 16px;
+    }
+    
+    h1{
+        font-size: 1.3em;
+        padding: 0.3em;
+    }
+    
+    h2{
+        font-size: 1.2em;
+    }
+    
+}
+
+
