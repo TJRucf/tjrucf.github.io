@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding: 4vh;
+}
+
+.container{
+    border-radius: 25px;
+    border: 6px solid goldenrod;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+
+}
+
+.container .image img{
+    display: block;
+    margin: auto;
+    max-width: 75%;
+    padding-top: 2vh;
+}
+
+.container .audio audio{
+    display: block;
+    margin: auto;
+    padding-top: 2vh;
+    width: 70%;
+}
+
+.container .moves{
+    padding-top: 10px;
+    padding-bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .moves form{
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.container .moves form select{
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.container .moves button{
+    display: block;
+    margin: 7vh auto 2vh;
+}
+
+.header{
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+}
+
+#team {
+    width: 90%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+}
+
+#team tr{
+    border: 1px solid black;
+}
+
+#team td{
+    padding: 6px;
+    vertical-align: middle;
+}
+
+#team img{
+    width: 60px;
+}
